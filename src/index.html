@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/app.scss">
+  <script type="module" src="./js/app.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Trello</h1>
+    <div id="clock"></div>
+  </header>
+
+  <div id="root">
+
+    <div id="todo" class="column">
+      <div id="capTodo">
+        <p>To Do</p>
+        <div id="counter"></div>
+      </div>
+      <section id="list"></section>
+      <button id="add">Add To Do</button>
+    </div>
+
+    <div id="inProgress" class="column">
+      <div id="capInProgress">
+        <p>In Progress</p>
+        <div id="counter"></div>
+      </div>
+    </div>
+
+    <div id="done" class="column">
+      <div id="capDone">
+        <p>Done!</p>
+        <div id="counter"></div>
+      </div>
+      <button id="delAll">Delete All</button>
+    </div>
+
+  </div>
+
+  <div id="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <input id="inputEnter" placeholder="Enter Title of To Do..." type="text">
+      <input id="inputDescription" placeholder="Enter Description..." type="text">
+      <button id="addToDoInColumn">Add</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
